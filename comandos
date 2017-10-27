@@ -1,0 +1,121 @@
+GIT
+-crear una rama a partir de la rama en la que estas
+git checkout -b 'cambioTarjetaCliente' 
+
+-ver que cambios hice a un documento
+git diff 'archivo'
+
+-commit
+git commit -m 'comentario'
+
+-push
+git push origin nombre rama
+
+-ver los ultimos commits
+git log
+
+-eliminar un archivo
+git checkout nombre_archivo
+
+-agregar todo lo que esta listo para el commit en cache para usarlo despues
+git stash
+
+-checar todas las ramas y cambiar de rama
+git fetch && git checkout v2.0.14-rc
+
+-sacar lo que esta en el stash y meterlo a la rama en la que estoy
+git stash apply 
+
+-borrar todos los archivos
+git checkout .
+
+-Cambiar nombre de la rama
+git branch -m clietes clientes
+
+-agregar todos los archivos
+git add .
+
+-desligar un proyecto a un repositorio
+sudo rm -rf .git
+
+-agregar proyecto a repositorio
+git remote add origin git@gitlab.concredito.com.mx:desarrollo-sistemas/laVendimiaAbril.git
+
+
+NODE
+-instala todos los paquetes de node
+npm install
+
+-levantar el front
+npm run dev -s
+
+-Dar permisos de ejecucion
+chmod +x nombrearchivo
+
+-ejecutar script
+./ nombrearchivo
+
+
+
+LINUX
+-borrar un archivo
+rm -rf nbproject/build-impl.xml~
+
+-tumbar un puerto
+fuser -k 8081/tcp
+
+-correr el ultimo comando ejecutado junto que el que acabo de escribir
+sudo !! 
+
+
+SERVIDOR
+
+-acceder al servidor
+sudo -s
+su root
+ls
+ssh -i simulador_apis.pem ubuntu@34.214.210.198
+sudo service credex status
+
+cd comfu-api
+git branch
+sudo vim src/main/resources/application-dev.properties(cambiar fecha)
+i(insertar)
+:u(control-z)
+:x(salir y guardar cambios)
+sudo ./gradlew build
+
+sudo make update(tumba y levanta la api)
+
+-acceder al servidor con el archivo
+ssh 198
+
+-correr servicio
+sudo service 'nombre de servicio' start
+
+-detener un servicio
+sudo service 'nombre servicio' stop
+
+-ver si el servicio esta corriendo
+sudo service comfu status
+
+-compilar y agregar el jar actualizado
+./ gradlew build
+sudo make update
+
+-
+htop
+
+-observar movimiento de la api
+tailf /var/log/credex.log
+
+
+
+
+
+
+
+
+
+
+
